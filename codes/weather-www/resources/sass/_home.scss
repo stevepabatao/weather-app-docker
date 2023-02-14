@@ -1,0 +1,79 @@
+
+.form-inline {
+    display: flex;
+    justify-content: center;
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: calc(20% - 20px);
+    margin: 10px;
+}
+
+.card-img-top {
+    height: 200px;
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: calc(25% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(33.3% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+.bg-light {
+    width: 100%;
+}
+
+#recommendationCarousel {
+    .card-deck {
+        display: flex;
+        flex-wrap: wrap;
+        .card {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            img {
+                height: 200px;
+                object-fit: cover;
+                width: 100%;
+            }
+            .card-body {
+                text-align: center;
+                h5 {
+                    font-weight: bold;
+                }
+                .btn {
+                    margin-top: 1rem;
+                }
+            }
+            @media (max-width: 991px) {
+                width: calc(50% - 20px);
+            }
+            @media (max-width: 767px) {
+                width: calc(100% - 20px);
+            }
+        }
+    }
+    #currentWeather {
+        width: 100%;
+        @media (min-width: 992px) {
+            width: 50%;
+        }
+    }
+}
