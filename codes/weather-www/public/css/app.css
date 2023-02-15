@@ -10922,7 +10922,6 @@ a:focus {
 }
 
 .active {
-  color: white;
   text-decoration: none;
   opacity: 1;
 }

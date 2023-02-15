@@ -38,5 +38,10 @@ return [
         'api_key' => env('OPENWEATHERMAP_KEY'),
     ],
 
+    'foursquare' => [
+        'api_key' => env('FS_API_KEY');
+    ],
+
+
 
 ];

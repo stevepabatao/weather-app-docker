@@ -189,8 +189,6 @@
                     const response = await axios.get(`http://api.weather.local/api/weather/${this.city}`);
                     this.weather = response.data;
 
-                    console.log(this.weather);
-
                     this.temp = Math.round(this.weather.temperature);
                     this.tempDescription = this.weather.description;
                     this.humidity = this.weather.humidity;
@@ -198,7 +196,6 @@
                     this.temp_high = Math.round(this.weather.temperature_max);
                     this.temp_low = Math.round(this.weather.temperature_min);
                     this.icon = this.weatherIconsMap[this.weather.icon];
-                    console.log("ICON : " + this.icon);
 
                 } catch (error) {
                     this.error = error.message;

@@ -18,5 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/weather/{city}', 'WeatherController@index');
-Route::get('/nearby/{city}', 'NearByController@index');
+Route::get('/nearby/{ll}', 'NearByController@index');
 
